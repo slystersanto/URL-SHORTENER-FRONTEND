@@ -41,7 +41,7 @@ const UrlTable = () => {
           {urls.map((url) => (
             <tr key={url._id}>
               <td>{url.longURL}</td>
-              <td>http://localhost:7789/short/{url.shortURL}</td>
+              <td>{url.shortURL}</td>
               <td>{new Date(url.created_at).toLocaleString()}</td>
               
             </tr>
