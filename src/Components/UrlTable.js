@@ -41,7 +41,7 @@ const UrlTable = () => {
           {urls.map((url) => (
             <tr key={url._id}>
               <td>{url.longURL}</td>
-              <td>{url.shortURL}</td>
+              <td>https://url-shortener-backend-s80x.onrender.com/short/{url.shortURL}</td>
               <td>{new Date(url.created_at).toLocaleString()}</td>
               
             </tr>
